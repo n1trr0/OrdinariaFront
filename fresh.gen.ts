@@ -9,7 +9,6 @@ import * as $characters_id_ from "./routes/characters/[id].tsx";
 import * as $favorites from "./routes/favorites.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $CharCard from "./islands/CharCard.tsx";
-import * as $CharListFavs from "./islands/CharListFavs.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -23,7 +22,6 @@ const manifest = {
   },
   islands: {
     "./islands/CharCard.tsx": $CharCard,
-    "./islands/CharListFavs.tsx": $CharListFavs,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
